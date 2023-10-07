@@ -41,20 +41,30 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             return View();
         }
+
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Test()
         {
             return View();
         }
+
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Test2()
         {
             return View();
         }
+
+        [AllowAnonymous]
+        public IActionResult Pepino()
+        {
+            return View();
+        }
+        
         [AllowAnonymous]
         public IActionResult Severo()
+
         {
             return View();
         }
