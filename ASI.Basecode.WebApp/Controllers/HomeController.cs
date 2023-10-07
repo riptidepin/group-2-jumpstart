@@ -35,23 +35,25 @@ namespace ASI.Basecode.WebApp.Controllers
         /// </summary>
         /// <returns> Home View </returns>
 
-        [HttpGet]
         [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpGet]
         [AllowAnonymous]
         public IActionResult Test()
         {
             return View();
         }
 
-        [HttpGet]
         [AllowAnonymous]
         public IActionResult Test2()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public IActionResult Brignas()
         {
             return View();
         }
@@ -64,7 +66,6 @@ namespace ASI.Basecode.WebApp.Controllers
         
         [AllowAnonymous]
         public IActionResult Severo()
-
         {
             return View();
         }
