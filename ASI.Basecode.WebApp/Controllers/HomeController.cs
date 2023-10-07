@@ -52,6 +52,13 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             return View();
         }
+
+        [AllowAnonymous]
+        public IActionResult Garado()
+        {
+            return View();  
+        }
+        
         [AllowAnonymous]
         public IActionResult Brignas()
         {
