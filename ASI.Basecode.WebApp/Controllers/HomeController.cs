@@ -21,6 +21,7 @@ namespace ASI.Basecode.WebApp.Controllers
         /// <param name="configuration"></param>
         /// <param name="localizer"></param>
         /// <param name="mapper"></param>
+      
         public HomeController(IHttpContextAccessor httpContextAccessor,
                               ILoggerFactory loggerFactory,
                               IConfiguration configuration,
@@ -50,6 +51,30 @@ namespace ASI.Basecode.WebApp.Controllers
         }
         [AllowAnonymous]
         public IActionResult Esguerra()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Garado()
+        {
+            return View();  
+        }
+        
+        [AllowAnonymous]
+        public IActionResult Brignas()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public IActionResult Pepino()
+        {
+            return View();
+        }
+        
+        [AllowAnonymous]
+        public IActionResult Severo()
         {
             return View();
         }
