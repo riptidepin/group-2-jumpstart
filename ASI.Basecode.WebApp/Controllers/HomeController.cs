@@ -40,15 +40,18 @@ namespace ASI.Basecode.WebApp.Controllers
         {
             return View();
         }
-
+        [AllowAnonymous]
+        public IActionResult Home()
+        {
+            return View();
+        }
         [AllowAnonymous]
         public IActionResult Test()
         {
             return View();
         }
-
         [AllowAnonymous]
-        public IActionResult Test2()
+        public IActionResult Esguerra()
         {
             return View();
         }

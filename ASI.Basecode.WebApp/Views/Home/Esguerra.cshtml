@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Elijah Nicholas' Page";
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+<div class="text-center">
+    <br/>
+    <h1 class="display-4" style="font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 20pt">About the Developers</h1>
+    <h2 id="devName" class="display-3" style="font-family: 'Raleway', sans-serif; font-weight: 300; font-size: 15pt">Hello, World.</h2>
+    <br/>
+    <img src="~/img/pacquiao.png" id="biasImg" width="180" height="320"></img>
+     <h3>Meet the Developers of This Page</h3>
+    <br/>
+    <button onclick="myFunction()">Click Me To Change Picture</button>
+    <br/>
+    <script language="text/javascript" type="text/javascript">
+        let imagesNames =
+            ["https://upload.wikimedia.org/wikipedia/commons/0/0c/Kang_Seulgi_For_SBS_Radio_In_October_2022.png",
+                "https://superstarsbio.com/wp-content/uploads/2020/07/Bang-Chan-aesdr.jpg.webp",
+                "https://wallpapercave.com/wp/wp2274191.png",
+                "https://i.pinimg.com/originals/fc/de/fd/fcdefda1c508e657de6bb83848961525.jpg",
+                "http://images6.fanpop.com/image/articles/269000/jihyo-twice_269505_top_full.jpg?cache=1544747701",
+                "https://1.bp.blogspot.com/-O3W1DDoC4eU/XqCvEYxN0AI/AAAAAAAADHs/rfs7f1bc3qcc0g1ylH-WMqPuuBXuPJK0wCLcBGAsYHQ/s640/blackpink%2Bfanbase%2Bwallpaper%2Bart.jpg"];
+        
+        let devNames =
+        ["Estelle Marie Pepino", "Angeli Mhiriel Severo", "Elijah Nicholas Esguerra",
+        "Rian Dave Brignas","Joseph Martin Garado", "Matt Josel Ouano"];
+
+        let index = 0;
+        function myFunction() {
+            document.getElementById("biasImg").src = imagesNames[index];
+            document.getElementById("devName").innerHTML = devNames[index];
+            index++;
+
+            if(index > devNames.length){
+                index = 0;
+            }
+            console.log(index);
+        }
+
+    </script>
+    @Html.ActionLink("Return to main", "Index", "Home")
+</div>
