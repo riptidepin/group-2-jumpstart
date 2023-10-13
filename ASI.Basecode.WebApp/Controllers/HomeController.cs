@@ -34,6 +34,7 @@ namespace ASI.Basecode.WebApp.Controllers
         /// Returns Home View.
         /// </summary>
         /// <returns> Home View </returns>
+
         [AllowAnonymous]
         public IActionResult Index()
         {
